@@ -7,10 +7,19 @@
   "description": "A simple template to get started with any framework",
   "main": "server.js",
   "scripts": {
-    "start": "pushstate-server . 3000"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
-    "pushstate-server": "^3.0.1"
+    "pouchdb-browser": "^6.3.4",
+    "pushstate-server": "^3.0.1",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "^1.0.10",
+    "recompose": "^0.24.0",
+    "tachyons": "^4.7.4"
   },
   "engines": {
     "node": "8.1.x"
