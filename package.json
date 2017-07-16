@@ -9,7 +9,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "cp -R build/ deploy/ && cd deploy && npx now && npx now alias $(pbpaste) www.pixelfun.xyz"
+    "deploy": "cp -R build/ deploy/ && cd deploy && npx now && npx now alias $(pbpaste) www.pixelfun.xyz && npx now alias $(pbpaste) pixelfun.xyz"
   },
   "dependencies": {
     "pouchdb-browser": "^6.3.4",

@@ -21,7 +21,7 @@ const Search = props => {
   console.log(props)
   const li = doc =>
     <li key={doc._id}>
-      <Link to={`/${doc.name.split(' ').join('-')}/${doc._id}`}>
+      <Link to={`/${doc.name.replace(' ', '-')}/${doc._id}`}>
         {doc.name} by {doc.author}
       </Link>
     </li>
@@ -30,7 +30,10 @@ const Search = props => {
     <div className="flex justify-center">
       <div>
         {props.results.length === 1 &&
-          <Redirect to={`${props.results[0].name}/${props.results[0]._id}`} />}
+          <Redirect
+            to={`${props.results[0].name.replace(' ', '-')}/${props.results[0]
+              ._id}`}
+          />}
         <h1>Search Results</h1>
         {props.results.length === 0 && <p>No Results</p>}
         <ul className="list">

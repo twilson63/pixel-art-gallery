@@ -24,9 +24,9 @@ const Show = props => {
         <h3 className="tc sans-serif black-80">
           <a
             className="twitter-share-button link ba br2 pa2 bg-orange white dim"
-            href={`https://twitter.com/intent/tweet?text=Check out this art!
-At Pixel Fun https://pixelfun.xyz/art/${props.match.params.id}
- Create your own art at https://app.pixelfun.xyz `}
+            href={`https://twitter.com/intent/tweet?text=Check out this pixel art!
+ https://pixelfun.xyz${encodeURI(props.location.pathname)}
+ Create your own art at https://app.pixelfun.xyz #pixelart`}
             data-size="large"
           >
             Tweet
