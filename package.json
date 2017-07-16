@@ -8,7 +8,8 @@
   "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "cp -R build/ deploy/ && cd deploy && npx now && npx now alias $(pbpaste) www.pixelfun.xyz"
   },
   "dependencies": {
     "pouchdb-browser": "^6.3.4",

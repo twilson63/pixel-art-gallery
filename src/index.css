@@ -1,0 +1,32 @@
+.bg-brown {
+  background-color: brown;
+}
+
+.bg-skin {
+  background-color: #ffdbac;
+}
+
+.pixel {
+  height: 5px;
+  width: 5px;
+}
+
+@media (max-width: 500px) {
+  .w1 {
+    width: 23px;
+  }
+
+  .h1 {
+    height: 23px;
+  }
+}
+
+@media (max-width: 360px) {
+  .w1 {
+    width: 20px;
+  }
+
+  .h1 {
+    height: 20px;
+  }
+}
